@@ -6,7 +6,7 @@
 %define		pdir	Hook
 %define		pnam	WrapSub
 Summary:	Hook::WrapSub - wrap subs with pre- and post-call hooks
-Summary(pl):	Hook::WrapSub - obudowanie procedur w wywo≥ania przed i po wywo≥aniu
+Summary(pl.UTF-8):   Hook::WrapSub - obudowanie procedur w wywo≈Çania przed i po wywo≈Çaniu
 Name:		perl-Hook-WrapSub
 Version:	0.03
 Release:	0.1
@@ -37,19 +37,19 @@ beforehand:
 
   wrap_subs \&before, 'some_func';
 
-%description -l pl
-Ta funkcja umoøliwia przechwytywanie wywo≥ania dowolnej nazwanej
-funkcji; moøna dodaÊ procedury obs≥ugi zarÛwno przed jak i po
-wywo≥aniu przechwytywanej funkcji.
+%description -l pl.UTF-8
+Ta funkcja umo≈ºliwia przechwytywanie wywo≈Çania dowolnej nazwanej
+funkcji; mo≈ºna dodaƒá procedury obs≈Çugi zar√≥wno przed jak i po
+wywo≈Çaniu przechwytywanej funkcji.
 
-Na przyk≥ad:
+Na przyk≈Çad:
 
   wrap_subs \&przed, 'jakas_funkcja', \&po
 
-W tym przypadku, kiedy wywo≥ywana jest 'jakas_funkcja', najpierw
-wywo≥ywana jest procedura &przed, a procedura &po jest wywo≥ywana po
-powrocie. Obie s± opcjonalne. Aby przechwyciÊ tylko punkt przed
-wywo≥aniem moøna uøyÊ:
+W tym przypadku, kiedy wywo≈Çywana jest 'jakas_funkcja', najpierw
+wywo≈Çywana jest procedura &przed, a procedura &po jest wywo≈Çywana po
+powrocie. Obie sƒÖ opcjonalne. Aby przechwyciƒá tylko punkt przed
+wywo≈Çaniem mo≈ºna u≈ºyƒá:
 
   wrap_subs \&przed, 'jakas_funkcja';
 
