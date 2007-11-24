@@ -9,7 +9,7 @@ Summary:	Hook::WrapSub - wrap subs with pre- and post-call hooks
 Summary(pl.UTF-8):	Hook::WrapSub - obudowanie procedur w wywołania przed i po wywołaniu
 Name:		perl-Hook-WrapSub
 Version:	0.03
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -20,6 +20,8 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_noautoreq	perl(splice)
 
 %description
 This function enables intercepting a call to any named function;
@@ -74,7 +76,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
-%dir %{perl_vendorlib}/Hook
+%doc Changes
 %{perl_vendorlib}/Hook/*.pm
 %{_mandir}/man3/*
