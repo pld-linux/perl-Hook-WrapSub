@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Hook
 %define		pnam	WrapSub
 Summary:	Hook::WrapSub - wrap subs with pre- and post-call hooks
