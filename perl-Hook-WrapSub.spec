@@ -8,7 +8,7 @@ Summary:	Hook::WrapSub - wrap subs with pre- and post-call hooks
 Summary(pl.UTF-8):	Hook::WrapSub - obudowanie procedur w wywołania przed i po wywołaniu
 Name:		perl-Hook-WrapSub
 Version:	0.03
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
